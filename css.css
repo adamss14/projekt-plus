@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F4F3F2;
+
     position: relative;
     font-family: 'Poppins', sans-serif;
 
@@ -19,7 +19,12 @@
 html{
     height: 100%;
     margin: 0;
+    overflow-x: hidden;
 
+}
+
+.color{
+    background-color: #F4F3F2;
 }
 
 .wrapper {
@@ -144,7 +149,7 @@ html{
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    filter: saturate(800%) brightness(200%);
+    filter: saturate(500%) brightness(200%);
     animation: fadeIn 1.5s forwards;
     pointer-events: none;
     animation-delay: 0.5s;
@@ -164,4 +169,56 @@ html{
     text-align: center;
 }
 
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkturquoise;
+    color: white;
+    text-align: center;
+}
+
+.footer-logo{
+    margin: 10px;
+    padding: 15px;
+
+}
+
+.footer-logo img{
+    background-color: rgba(255,255,255,0);
+    width: 30%;
+}
+
+.footer-logo hr {
+    border: 1px solid #F4F3F2   ;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.footer-grid-item{
+    justify-content: center;
+    text-align: left;
+    color: #F4F3F2;
+    position: relative;
+}
+
+.footer-grid-item1{
+    justify-content: right;
+    text-align: left;
+    color: #F4F3F2;
+    right: -20%;
+}
+
+.footer-end p{
+    margin-top: 10px;
+}
+
+.footer-end hr{
+    border: 1px solid #F4F3F2   ;
+
+}
 /*kkkk*/
