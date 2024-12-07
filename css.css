@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrat", sans-serif;
 
 }
+
 
 .color{
     background-color: #F4F3F2;
@@ -23,6 +21,7 @@ html{
 
 }
 
+
 .color{
     background-color: #F4F3F2;
 }
@@ -34,14 +33,51 @@ html{
 
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Styly pro dropdown */
+.dropdown {
+    position: relative;
+    border-bottom: 1px #DBD7D2 solid;
+}
+
+.dropdown .dropdown-content {
+    display: none; /* Skryjeme dropdown ve výchozím stavu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F4F3F2;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Zobrazíme dropdown při hoveru nad .dropdown */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px #DBD7D2 solid;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+}
 
 
 .navbar{
     display: flex;
-    position: relative;
-    overflow: hidden;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between; /* Zajišťuje zarovnání obrázku vlevo a zbytku vpravo */
     padding: 0 20px;
     background-color: #F4F3F2;
 
@@ -57,6 +93,7 @@ html{
     line-height: 25px;
     border-radius: 5px;
     font-weight: 500;
+
 }
 
 .navbar #logo-bar{
@@ -70,9 +107,6 @@ html{
 
 }
 
-.navbar #logo-bar:hover{
-
-}
 
 .navbar a:hover {
     background-color: #ddd;
@@ -157,17 +191,7 @@ html{
     background-color: transparent;
     mix-blend-mode: multiply;
 }
-.grid{
-    display: grid;
-    grid-template-columns: auto auto ;
 
-}
-.grid-item{
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    margin-left: 20px;
-    text-align: center;
-}
 
 .footer {
     position: relative;
@@ -213,6 +237,27 @@ html{
     right: -20%;
 }
 
+.footer-grid-item p{
+    font-size: large;
+}
+
+.footer-grid-item1 p{
+    font-size: large;
+}
+
+.footer-grid-item1 a{
+    text-decoration: underline;
+    color: white;
+}
+
+.nm{
+    font-style: oblique;
+}
+
+.mail{
+    text-decoration: underline;
+}
+
 .footer-end p{
     margin-top: 10px;
 }
@@ -221,4 +266,148 @@ html{
     border: 1px solid #F4F3F2   ;
 
 }
+
+.header-main{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+
+.grid1{
+    border: 1px solid darkturquoise;
+    background-color: darkturquoise;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
+    width: 300px;
+}
+
+.grid1 img{
+    max-width: 45%;
+    max-height: 100%;
+    margin: 30px;
+
+
+}
+
+.grid2 img{
+    max-width: 45%;
+    max-height: 100%;
+    margin: 30px;
+
+
+}
+.grid2{
+    background-color: #08fcfc;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
+    width: 300px;
+}
+
+.grid1 a{
+    justify-content: center; /* Horizontální zarovnání obsahu */
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: #F4F3F2;
+    transition: font-size 0.2s ease-in;
+    text-align: center;
+
+}
+
+.grid2 a{
+
+    justify-content: center; /* Horizontální zarovnání obsahu */
+    align-items: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: #F4F3F2;
+    transition: font-size 0.2s ease-in-out;
+    text-align: center;
+}
+
+.grid1 a:hover{
+    font-size: 25px;
+}
+
+.grid2 a:hover{
+    font-size: 25px;
+}
+
+.info h1{
+    text-align: center;
+}
+
+.main-container
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+}
+
+.logo-kontakt-bar {
+    background-color: darkturquoise;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 15%;
+    color: white;
+}
+
+.logo-kontakt-bar img{
+    max-width: 40%;
+}
+.kontakt-text
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.logo
+{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 1rem;
+}
+
+.team-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cin2 {
+    text-align: left;
+    flex: 0.35;
+    margin-top: 60px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cin-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.mapa2
+{
+    display: flex;
+    justify-content: center;
+}
+.mapa
+{
+    width: 100vw;
+    height: 500px;
+    filter: blur(10px);
+    transition: filter 1.5s ease;
+}
+
 /*kkkk*/
