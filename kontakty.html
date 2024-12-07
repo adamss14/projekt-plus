@@ -33,58 +33,121 @@
 
     <br>
 
-    <div class="mapa2">
-        <div class="sidlo2">
-            <h2 style="text-decoration: underline; text-decoration-color: DarkTurquoise; text-decoration-thickness: 0.1em;">Sídlo společnosti</h2>
-            <br>
-            <div class="popis">
-                <p>Dobrušská 1805/5 <br><br> 147 00 Praha 4 <br><br><br> IČO: 19553358 <br><br> DIČ: CZ19553358 <br><br>
-                    Zapsána v OR Praha oddíl C, vložka 388344</p>
+
+    <div class="logo-kontakt-bar">
+        <h1 class="kontakt-text">KONTAKT</h1>
+        <div class="logo">
+            <img src="./img/logo_bez_barvy.png" alt="Logo">
+        </div>
+    </div>
+
+    <div class="cin-container2">
+        <div class="cin2">
+            <h3 style="color: darkturquoise">Projekt plus, s.r.o.</h3>
+            <p style="line-height: 1.8; font-size: 18px;">
+                Dobrušská 1805/5 <br>
+                147 00 Praha 4 <br>
+                IČO: 19553358 <br>
+                DIČ: CZ19553358 <br>
+                Zapsána v OR Praha oddíl C, vložka 388344
+            </p>
+            <p><img style="width: 25%; height: auto;" src="./img/logo.png" alt="Logo"></p>
+        </div>
+
+        <div class="cin2">
+            <h3 style="color: darkturquoise;">Náš tým</h3>
+            <div class="team-sections">
+                <div>
+                    <h2 style="font-size: 20px;">VEDENÍ SPOLEČNOSTI</h2>
+                    <p style="line-height: 1.8; font-size: 18px;">
+                        Ing. Aleš Jindřich <br>
+                        Mob.: 602 729 278 <br>
+                        E-mail: ales.jindrich@projekt-plus.cz <br>
+                        <br>
+                        Ing. Miloslav Pejchar <br>
+                        Mob.: 724 767 637 <br>
+                        E-mail: miloslav.pejchar@projekt-plus.cz
+                    </p>
+                </div>
+                <div>
+                    <h2 style="font-size: 20px;">EKONIMICKÉ ODDĚLENÍ</h2>
+                    <p style="line-height: 1.8; font-size: 18px;">
+                        Zdenka Horáčková <br>
+                        Mob.: 720 361 358 <br>
+                        E-mail: zdenka.horackova@projekt-plus.cz
+                    </p>
+                </div>
             </div>
-            <iframe class="mapa"
+        </div>
+    </div>
+
+    <br>
+
+    <div class="mapa2">
+        <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4010.8022182101304!2d14.424902359874112!3d50.0226360455466!3m2!1i1024!2i768
         !4f13.1!3m3!1m2!1s0x470b916b0143e19f%3A0x3cc049e82dc11b62!2sProjektplus%20s.r.o!5e0!3m2!1scs!2scz!4v1711726141851!5m2!1scs!2scz"
-                width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="img/logo_nadpis_white.png">
+            <hr>
+            <div class="footer-grid">
+                <div class="footer-grid-item">
+                    <br>
+                    <p>&copy; Projekt Plus 2024</p>
+                    <p>Dobrušská 1805/5</p>
+                    <p>147 00 Praha 4</p>
+                    <br><br>
+                    <p>IČ: 19553358</p>
+                    <p>DIČ: CZ19553358</p>
+                    <br>
+                </div>
+                <div class="footer-grid-item1">
+                    <br>
+                    <h2>Vedení společnosti</h2>
+                    <p>Ing. Aleš Jindřich</p>
+                    <p style="font-weight:bold">+420 602 729 278</p>
+                    <p>ales.jindrich@projekt-plus.cz</p>
+
+                </div>
+                <div class="footer-grid-item1">
+                    <br>
+                    <h2>Vedení společnosti</h2>
+                    <p>Ing. Miloslav Pejchar</p>
+                    <p style="font-weight:bold">+420 724 767 637</p>
+                    <p>miloslav.pejchar@projekt-plus.cz</p>
+                </div>
+            </div>
+
+            <hr>
+            <div class="footer-end">
+                <p>Zapsána v OR Praha oddíl C, vložka 388344</p>
+            </div>
         </div>
-    </div>
 
-    <div class="nadpis2">
-        <h2 style="text-decoration: underline; text-decoration-color: DarkTurquoise; text-decoration-thickness: 0.1em;">Vedení společnosti</h2>
-    </div>
+    </footer>
+    <script>
+        document.addEventListener("scroll", function () {
+            const mapContainer = document.querySelector(".mapa");
+            const map = document.querySelector(".mapa");
 
-    <div class="vedeni-container">
-        <div class="vedeni">
-            <p>Ing. Aleš Jindřich <br><br> Mob.: 602 729 278 <br><br> E-mail: ales.jindrich@projekt-plus.cz</p>
-        </div>
+            const rect = mapContainer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
 
-        <div class="vedeni">
-            <p>Ing. Miloslav Pejchar <br><br> Mob.: 724 767 637 <br><br> E-mail: miloslav.pejchar@projekt-plus.cz</p>
-        </div>
-    </div>
-
-    <div class="nadpis2">
-        <h2 style="text-decoration: underline; text-decoration-color: DarkTurquoise; text-decoration-thickness: 0.1em;">Ekonomické oddělení</h2>
-    </div>
-
-    <div class="eko">
-        <span>Zdenka Horáčková</span> <br><br>
-        <span>Mob.: 720 361 358</span> <br><br>
-        <span>E-mail: zdenka.horackova@projekt-plus.cz</span>
-    </div>
-    <br>
-    <br>
-    <br>
-
-    <div class="logo">
-        <p><img src="./img/logo_bez_barvy.png" alt=""></p>
-    </div>
-
-    <div class="copy">
-        <footer>
-            <p>&copy; Projektplus 2024</p>
-        </footer>
-    </div>
+            if (rect.top <= windowHeight && rect.bottom >= 0) {
+                map.style.filter = "blur(0)";
+            } else {
+                map.style.filter = "blur(10px)";
+            }
+        });
+    </script>
 </body>
 
 </html>
