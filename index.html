@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
@@ -33,8 +35,14 @@
             <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
                 <img id="logo-bar" src="img/logo.png">
                 <a class="aktivni" href="index.html">O nás</a>
-                <a href="sluzby.html">Služby</a>
-                <a href="kontakt.html">Kontakty</a>
+                <li class="dropdown">
+                    <a href="sluzby.html" id="sluzby">Služby</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Projekční služby</a></li>
+                        <li><a href="#">Inženýrské služby</a></li>
+                    </ul>
+                </li>
+                <a href="kontakty.html">Kontakty</a>
             </nav>
 
         </div>
@@ -48,12 +56,64 @@
     </div>
 
 
-    <div class="grid">
-        <div class="grid-item">asasdasdasd</div>
-        <div class="grid-item">
+<div class="wrapper">
+    <div class="header-main">
+        <div class="grid1">
+            <img src="img/icon_lamp.png">
+            <br>
+            <a href=""><p>Silnoproud</p> </a>
+
+        </div>
+        <div class="grid2">
+            <img src="img/icon_pole.png">
+            <br>
+            <a href=""><p>Slaboproud</p> </a>
+        </div>
+        <div class="grid1">
+            <img src="img/icon_contract.png">
+            <br>
+            <a href=""><p>Projektová činnost</p> </a>
+        </div>
+        <div class="grid2">
+            <img src="img/icon_diagram.png">
+            <br>
+            <a href=""><p>Realizační činnost</p> </a>
 
         </div>
     </div>
+
+    <div class="info">
+        <div>
+            <br>
+            <h1 class="nadpis">O SPOLEČNOSTI</h1>
+        </div>
+        <div class="main-container">
+            <p>
+                Společnost byla založena v roce 2023 a navazuje na dlouholeté zkušenosti zakládajících <br> členů
+                společnosti zejména v oblasti projekční a inženýrské činnosti.</p>
+            <br>
+            <p>
+                Naším cílem je nabízet profesionální služby v oblasti poradenské, konzultační a projekční <br> činnosti,
+                zaměřené zejména na elektrotechnické a energetické projekty.</p>
+            <br>
+            <p>
+                Své služby nabízíme nejen soukromým právnickým osobám (developerské společnosti, <br> architektonická
+                studia, Projekční kanceláře, realizační společnosti…), veřejné
+                správě <br> (městům, obcím, příspěvkovým organizacím…), ale také osobám fyzickým.
+            </p>
+            <br>
+            <p>
+                Společnost je pojištěna pro případ odpovědnosti za škodu vzniklou jiné osobě v souvislosti <br> s
+                výkonem odborné činnosti s limitem 5 mil.Kč.</p>
+            <br>
+        </div>
+
+    </div>
+
+
+</div>
+
+
 
 
 <footer class="footer">
@@ -75,16 +135,16 @@
                 <br>
                 <h2>Vedení společnosti</h2>
                 <p>Ing. Aleš Jindřich</p>
-                <p>+420 602 729 278</p>
-                <p><a href="mailto:info@boland.cz">ales.jindrich@projekt-plus.cz</a></p>
+                <p style="font-weight:bold">+420 602 729 278</p>
+                <p class="mail">ales.jindrich@projekt-plus.cz</p>
 
             </div>
             <div class="footer-grid-item1">
                 <br>
                 <h2>Vedení společnosti</h2>
                 <p>Ing. Miloslav Pejchar</p>
-                <p>+420 724 767 637</p>
-                <p><a href="mailto:info@boland.cz">miloslav.pejchar@projekt-plus.cz</a></p>
+                <p style="font-weight:bold">+420 724 767 637</p>
+                <p class="mail">miloslav.pejchar@projekt-plus.cz</p>
             </div>
         </div>
 
