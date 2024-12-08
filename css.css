@@ -439,4 +439,78 @@ li {
     transition: filter 1.5s ease;
 }
 
+.main-grid1 {
+    border: 1px solid #08fcfc;
+    background-color: darkturquoise;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    margin: 15px;
+}
+
+.main{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    gap: 20px;
+}
+
+.main-grid1 ul{
+    margin: 10px;
+}
+
+.main-grid1 li{
+    padding: 10px;
+    font-size: 20px;
+    color: #F4F3F2;
+}
+
+.main-grid1 h1{
+    padding: 15px;
+    color: #F4F3F2;
+    text-decoration-line: underline ;
+    text-decoration-thickness: 2px ;
+}
+
+
+.main-index{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    font-size: 20px;
+}
+
+.main-index h2{
+    padding: 10px;
+}
+
+.dokumentace{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dokumentace h2{
+    text-decoration-line: underline;
+    text-decoration-color: #08fcfc;
+    text-decoration-thickness: 2px;
+}
+
+.dokumentace li{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 /*kkkk*/
