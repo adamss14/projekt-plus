@@ -30,7 +30,7 @@
     <div class="wrapper">
 
         <div class="header">
-            <a href="index.html" id="logo" data-aos="fade-down" data-aos-duration="850" data-aos-delay="200"></a>
+            <a href="index.html" id="logo" ></a>
 
             <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
                 <img id="logo-bar" src="img/logo.png">
@@ -38,8 +38,8 @@
                 <li class="dropdown">
                     <a href="sluzby.html" id="sluzby">Služby</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Projekční služby</a></li>
-                        <li><a href="#">Inženýrské služby</a></li>
+                        <li><a href="">Projekční služby</a></li>
+                        <li><a href="">Inženýrské služby</a></li>
                     </ul>
                 </li>
                 <a href="kontakty.html">Kontakty</a>
@@ -57,7 +57,7 @@
 
 
 <div class="wrapper">
-    <div class="header-main">
+    <div class="header-main" data-aos="fade-in" data-aos-duration="850">
         <div class="grid1">
             <img src="img/icon_lamp.png">
             <br>
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="info">
+    <div class="info" >
         <div>
             <br>
             <h1 class="nadpis">O SPOLEČNOSTI</h1>
@@ -116,7 +116,7 @@
 
 
 
-<footer class="footer">
+<footer class="footer" >
     <div class="footer-logo">
         <img src="img/logo_nadpis_white.png">
         <hr>
@@ -155,6 +155,20 @@
     </div>
 
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        AOS.init();
+
+        document.querySelectorAll('.main').forEach(element => {
+            element.addEventListener('aos:in', function() {
+                // Když se animace zobrazí, odstraníme atributy AOS
+                element.removeAttribute('data-aos');
+                element.removeAttribute('data-aos-duration');
+            });
+        });
+    });
+</script>
 
 </body>
 </html>

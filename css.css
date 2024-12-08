@@ -45,6 +45,7 @@ li {
 .dropdown {
     position: relative;
     border-bottom: 1px #DBD7D2 solid;
+
 }
 
 .dropdown .dropdown-content {
@@ -80,7 +81,6 @@ li {
     align-items: center;
     padding: 0 20px;
     background-color: #F4F3F2;
-
 
 }
 
@@ -270,6 +270,9 @@ li {
 .header-main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     display: grid;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
 
 .grid1{
@@ -280,7 +283,11 @@ li {
     text-align: center;
     height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
     width: 300px;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
+
 
 .grid1 img{
     max-width: 45%;
@@ -304,7 +311,11 @@ li {
     text-align: center;
     height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
     width: 300px;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
 }
+
 
 .grid1 a{
     justify-content: center; /* Horizontální zarovnání obsahu */
@@ -338,14 +349,22 @@ li {
 
 .info h1{
     text-align: center;
+    animation: fadeIn 1.5s forwards;
+    pointer-events: none;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 .main-container
 {
     text-align: center;
     padding: 10px;
-    font-size: 17px;
+    font-size: 20px;
     color: black;
+    animation: fadeIn 1s forwards;
+    pointer-events: none;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 .logo-kontakt-bar {
@@ -355,10 +374,14 @@ li {
     align-items: center;
     padding: 40px 15%;
     color: white;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
 
 .logo-kontakt-bar img{
     max-width: 40%;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
 .kontakt-text
 {
@@ -380,6 +403,8 @@ li {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
 
 .cin2 {
@@ -390,12 +415,16 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
 
 .cin-container2 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    animation: fadeIn 1s forwards;
+    opacity: 0;
 }
 .mapa2
 {
