@@ -35,16 +35,17 @@
             <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
                 <img id="logo-bar" src="img/logo.png">
                 <span id="menu-icon">&#9776;</span>
-                <a class="aktivni" href="index.html">O nás</a>
-                <li class="dropdown">
-                    <a href="#" onclick="return false;">Služby</a>
-                    <ul class="dropdown-content">
-                        <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
-                        <li><a href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
-                    </ul>
-                </li>
-                <a href="kontakty.html">Kontakty</a>
-            </nav>
+                <div class="menu">
+                    <a class="aktivni" href="index.html">O nás</a>
+                    <li class="dropdown">
+                        <a href="#" onclick="return false;">Služby</a>
+                        <ul class="dropdown-content">
+                            <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
+                            <li><a href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
+                        </ul>
+                    </li>
+                    <a href="kontakty.html">Kontakty</a>
+                </div>
 
         </div>
     </div>
@@ -168,6 +169,11 @@
                 element.removeAttribute('data-aos-duration');
             });
         });
+    });
+
+    document.getElementById('menu-icon').addEventListener('click', function () {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
     });
 </script>
 
