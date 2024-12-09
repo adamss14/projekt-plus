@@ -107,6 +107,9 @@ li {
 
 }
 
+.navbar #menu-icon{
+    opacity: 0;
+}
 
 .navbar a:hover {
     background-color: #ddd;
@@ -512,5 +515,96 @@ li {
     margin-top: 10px;
     font-size: 20px;
 }
+
+/*responsivita*/
+/* Responzivita na mobily */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar.active a {
+        display: block;
+        padding: 10px 5px;
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar #menu-icon {
+        opacity: 1;
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header-main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid1, .grid2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid1 img, .grid2 img {
+        max-width: 30%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-grid-item, .footer-grid-item1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-logo img {
+        width: 50%;
+    }
+
+    .main-container {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .team-sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-kontakt-bar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo-kontakt-bar img {
+        max-width: 80%;
+    }
+
+    .main-grid1, .main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .main-grid1 li {
+        font-size: 18px;
+    }
+
+    .info h1 {
+        font-size: 22px;
+    }
+}
+
 
 /*kkkk*/
