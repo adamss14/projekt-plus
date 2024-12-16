@@ -103,6 +103,10 @@ li {
 
 }
 
+.navbar a.aktivni{
+    text-decoration: underline;
+}
+
 
 .navbar #logo-bar{
     margin-right: auto;
@@ -216,6 +220,7 @@ li {
     background-color: darkturquoise;
     color: white;
     text-align: center;
+
 }
 
 .footer-logo{
@@ -559,13 +564,21 @@ li {
         max-width: 30%;
     }
 
-    .footer-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .footer {
+        flex-direction: column; /* Na mobilu může být vertikální orientace příhodnější */
+        text-align: left;
     }
 
-    .footer-grid-item, .footer-grid-item1 {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid-item {
         text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-grid-item1{
         margin-bottom: 15px;
     }
 
@@ -591,9 +604,29 @@ li {
         gap: 10px;
     }
 
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .logo{
+        max-width: 1%;
+        opacity: 0;
+    }
+
+    .cin2 img{
+        max-width: 1%;
+        opacity: 0;
+    }
+
     .logo-kontakt-bar {
+        display: flex;
         flex-direction: column;
-        padding: 20px;
+        align-items: center;
+        margin-top: 20px;
     }
 
     .logo-kontakt-bar img {
@@ -611,6 +644,40 @@ li {
 
     .info h1 {
         font-size: 22px;
+    }
+
+    .cin-container2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cin3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .cin2 h3{
+        display: flex;
+        gap: 20px;
+    }
+
+    .team-sections {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 60px;
+        gap: 20px;
+    }
+
+    .team-sections > div {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
     }
 
 }
