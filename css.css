@@ -103,10 +103,6 @@ li {
 
 }
 
-.navbar a.aktivni{
-    text-decoration: underline;
-}
-
 
 .navbar #logo-bar{
     margin-right: auto;
@@ -188,6 +184,7 @@ li {
     justify-content: center;
     background-color: transparent;
     mix-blend-mode: multiply;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -220,7 +217,6 @@ li {
     background-color: darkturquoise;
     color: white;
     text-align: center;
-
 }
 
 .footer-logo{
@@ -564,21 +560,13 @@ li {
         max-width: 30%;
     }
 
-    .footer {
-        flex-direction: column; /* Na mobilu může být vertikální orientace příhodnější */
-        text-align: left;
-    }
-
     .footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    .footer-grid-item {
         text-align: center;
-        margin-bottom: 15px;
     }
 
-    .footer-grid-item1{
+    .footer-grid-item, .footer-grid-item1 {
+        text-align: center;
         margin-bottom: 15px;
     }
 
@@ -604,29 +592,9 @@ li {
         gap: 10px;
     }
 
-    body{
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .logo{
-        max-width: 1%;
-        opacity: 0;
-    }
-
-    .cin2 img{
-        max-width: 1%;
-        opacity: 0;
-    }
-
     .logo-kontakt-bar {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+        padding: 20px;
     }
 
     .logo-kontakt-bar img {
@@ -646,38 +614,47 @@ li {
         font-size: 22px;
     }
 
-    .cin-container2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+}
 
-    .cin3 {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: left;
-        gap: 20px;
-    }
+.background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/city.jpg') no-repeat center center/cover;
+    opacity: 0.2;
+}
 
-    .cin2 h3{
-        display: flex;
-        gap: 20px;
-    }
+.team-sections2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
 
-    .team-sections {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: left;
-        margin-left: 60px;
-        gap: 20px;
-    }
+.hled {
+    font-size: 2rem;
+    color: darkturquoise;
+    text-align: center;
+    margin: 0;
+}
 
-    .team-sections > div {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
-    }
+.content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    zoom: 120%;
+}
 
+.logo {
+    width: 300px;
+}
+.p{
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 300px;
+}
+.nadpisos{
+    padding-left: 80px;
 }
