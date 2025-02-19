@@ -34,18 +34,20 @@
 
             <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
                 <img id="logo-bar" src="img/logo.png">
-                <a class="aktivni" href="index.html">O nás</a>
-                <li class="dropdown">
-                    <a href="#" onclick="return false;">Služby</a>
-                    <ul class="dropdown-content">
-                        <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
-                        <li><a href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
-                    </ul>
-                </li>
-                <a href="kontakty.html">Kontakty</a>
-                <a href="kariera.html">Kariéra</a>
+                <span id="menu-icon">&#9776;</span>
+                <div class="menu">
+                    <a href="index.html">O nás</a>
+                    <li class="dropdown">
+                        <a href="#" onclick="return false;">Služby</a>
+                        <ul class="dropdown-content">
+                            <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
+                            <li><a class="aktivni" href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
+                        </ul>
+                    </li>
+                    <a href="kontakty.html">Kontakty</a>
+                    <a href="kariera.html">Kariéra</a>
+                </div>
             </nav>
-
         </div>
     </div>
 </div>
@@ -104,7 +106,7 @@
         <img src="img/logo_nadpis_white.png">
         <hr>
         <div class="footer-grid">
-            <div class="footer-grid-item">
+            <div class="footer-grid-item1">
                 <br>
                 <p>Projekt Plus 2025</p>
                 <p>Dobrušská 1805/5</p>
@@ -139,20 +141,11 @@
 
 </footer>
 
+<script src="script.js">
+</script>
+
 </body>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        AOS.init();
 
-        document.querySelectorAll('.main').forEach(element => {
-            element.addEventListener('aos:in', function() {
-                // Když se animace zobrazí, odstraníme atributy AOS
-                element.removeAttribute('data-aos');
-                element.removeAttribute('data-aos-duration');
-            });
-        });
-    });
-</script>
 
 </html>

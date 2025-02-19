@@ -30,22 +30,24 @@
     <div class="wrapper">
 
         <div class="header">
-            <a href="index.html" id="logo" data-aos="fade-down" data-aos-duration="850" data-aos-delay="200"></a>
+            <a href="index.html" id="logo" ></a>
 
             <nav class="navbar" data-aos="fade-down" data-aos-duration="850" data-aos-delay="250">
                 <img id="logo-bar" src="img/logo.png">
-                <a class="aktivni" href="index.html">O nás</a>
-                <li class="dropdown">
-                    <a href="#" onclick="return false;">Služby</a>
-                    <ul class="dropdown-content">
-                        <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
-                        <li><a href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
-                    </ul>
-                </li>
-                <a href="kontakty.html">Kontakty</a>
-                <a href="kariera.html">Kariéra</a>
+                <span id="menu-icon">&#9776;</span>
+                <div class="menu">
+                    <a href="index.html">O nás</a>
+                    <li class="dropdown">
+                        <a href="#" onclick="return false;">Služby</a>
+                        <ul class="dropdown-content">
+                            <li><a href="projekcni-sluzby.html">Projekční služby</a></li>
+                            <li><a href="inzenyrske-sluzby.html">Inženýrské služby</a></li>
+                        </ul>
+                    </li>
+                    <a class="aktivni" href="kontakty.html">Kontakty</a>
+                    <a href="kariera.html">Kariéra</a>
+                </div>
             </nav>
-
         </div>
     </div>
 </div>
@@ -58,48 +60,39 @@
         </div>
     </div>
 
-    <div class="cin-container2">
-        <div class="cin2">
-            <h3 style="color: darkturquoise">Projekt plus, s.r.o.</h3>
-            <br>
-            <p style="line-height: 1.8; font-size: 18px;">
-                Dobrušská 1805/5 <br>
-                147 00 Praha 4 <br>
-                IČO: 19553358 <br>
-                DIČ: CZ19553358 <br>
-                Zapsána v OR Praha oddíl C, vložka 388344
-            </p>
-            <br>
-            <p><img style="width: 25%; height: auto;" src="./img/logo.png" alt="Logo"></p>
-        </div>
+<div class="contact-container">
+    <div class="company-info">
+        <h2>Projekt plus, s.r.o.</h2>
+        <p>Dobrušská 1805/5</p>
+        <p>147 00 Praha 4</p>
+        <p>IČO: 19553358</p>
+        <p>DIČ: CZ19553358</p>
+        <p>Zapsána v OR Praha oddíl C, vložka 388344</p>
+        <img src="./img/logo.png" alt="Logo" class="company-logo">
+    </div>
 
-        <div class="cin2">
-            <h3 style="color: darkturquoise;">Náš tým</h3>
-            <br>
-            <div class="team-sections">
-                <div>
-                    <h2 style="font-size: 19px;">VEDENÍ SPOLEČNOSTI</h2>
-                    <p style="line-height: 1.8; font-size: 18px;">
-                        Ing. Aleš Jindřich <br>
-                        +420 602 729 278 <br>
-                        ales.jindrich@projekt-plus.cz <br>
-                        <br>
-                        Ing. Miloslav Pejchar <br>
-                        +420 724 767 637 <br>
-                        Emiloslav.pejchar@projekt-plus.cz
-                    </p>
-                </div>
-                <div>
-                    <h2 style="font-size: 19px;">EKONOMICKÉ ODDĚLENÍ</h2>
-                    <p style="line-height: 1.8; font-size: 18px;">
-                        Zdenka Horáčková <br>
-                        +420 720 361 358 <br>
-                        zdenka.horackova@projekt-plus.cz
-                    </p>
-                </div>
+    <div class="team-info">
+        <h2>Náš tým</h2>
+        <div class="team-section">
+            <div class="team-column">
+                <h4>VEDENÍ SPOLEČNOSTI</h4>
+                <p>Ing. Aleš Jindřich</p>
+                <p>+420 602 729 278</p>
+                <p>ales.jindrich@projekt-plus.cz</p>
+                <br>
+                <p>Ing. Miloslav Pejchar</p>
+                <p>+420 724 767 637</p>
+                <p>Emiloslav.pejchar@projekt-plus.cz</p>
+            </div>
+            <div class="team-column">
+                <h4>EKONOMICKÉ ODDĚLENÍ</h4>
+                <p>Zdenka Horáčková</p>
+                <p>+420 720 361 358</p>
+                <p>zdenka.horackova@projekt-plus.cz</p>
             </div>
         </div>
     </div>
+</div><
 
     <br>
 
@@ -111,12 +104,12 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-<footer class="footer">
+<footer class="footer" >
     <div class="footer-logo">
         <img src="img/logo_nadpis_white.png">
         <hr>
         <div class="footer-grid">
-            <div class="footer-grid-item">
+            <div class="footer-grid-item1">
                 <br>
                 <p>Projekt Plus 2025</p>
                 <p>Dobrušská 1805/5</p>
@@ -151,24 +144,9 @@
 
 </footer>
 
+<script src="script.js">
+</script>
 
-
-
-    <script>
-        document.addEventListener("scroll", function () {
-            const mapContainer = document.querySelector(".mapa");
-            const map = document.querySelector(".mapa");
-
-            const rect = mapContainer.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            if (rect.top <= windowHeight && rect.bottom >= 0) {
-                map.style.filter = "blur(0)";
-            } else {
-                map.style.filter = "blur(10px)";
-            }
-        });
-    </script>
 </body>
 
 </html>
