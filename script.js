@@ -1,20 +1,3 @@
-let lastScrollTop = 0;
-const navbar = document.querySelector(".header");
-
-window.addEventListener("scroll", function () {
-    let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        // Scroll dolů – schovej navbar
-        navbar.style.top = "-100px";
-    } else {
-        // Scroll nahoru – zobraz navbar
-        navbar.style.top = "0";
-    }
-
-    lastScrollTop = scrollTop;
-});
-
 document.addEventListener("DOMContentLoaded", function() {
     AOS.init();
 

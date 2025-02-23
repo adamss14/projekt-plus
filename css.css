@@ -19,6 +19,10 @@
     }
 }
 
+body{
+    touch-action: pan-y;
+}
+
 
 .color{
     background-color: #F4F3F2;
@@ -62,7 +66,6 @@ li {
 }
 
 .dropdown-content {
-    visibility: hidden;
     opacity: 0;
     position: absolute;
     top: 100%;
@@ -72,9 +75,10 @@ li {
     z-index: 1;
     padding: 0;
     margin: 0;
-    pointer-events: none; /* Dropdown se nebude chovat jako viditelný prvek */
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden; /* Skryté ve výchozím stavu */
+    pointer-events: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -101,13 +105,11 @@ li {
 .menu{
     display: flex;
     justify-content: flex-start;
-    transition: none    ;
     align-items: center;
     padding: 0 20px;
     background-color: #F4F3F2;
 
 }
-
 
 
 .navbar{
@@ -295,9 +297,12 @@ li {
 }
 
 .footer-grid{
-    display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .footer-end {
@@ -306,11 +311,39 @@ li {
 }
 
 .footer-grid-item {
-    text-align: left;
+    width: 48%;
 }
 
+
 .footer-grid-item1 {
+    text-align: left;
+    flex: 1;
+}
+
+.footer-grid-item2 {
+    flex: 1.5;
     text-align: center;
+}
+
+.company-heading {
+    text-align: left;
+    margin-left: 25vh;
+    position: relative;
+    top: -1vh;
+}
+
+.contact-columns {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 10px;
+}
+
+.contact-box {
+    text-align: left;
+    flex: 5;
+    min-width: 200px;
+    top: 2vh;
 }
 
 .footer-grid-item1j {
@@ -338,6 +371,7 @@ li {
 
 .mail{
     text-decoration: underline;
+    font-size: 2vh;
 }
 
 .footer-end p{
@@ -351,11 +385,15 @@ li {
 
 
 .header-main{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: grid;
+    grid-template-columns: 1fr 1fr;
     animation: fadeIn 1.5s forwards;
     animation-delay: 0.5s;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+
 }
 
 .grid1{
@@ -364,7 +402,7 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
+    height: 250px;
     width: 300px;
     animation: fadeIn 1.5s forwards;
     animation-delay: 0.5s;
@@ -394,7 +432,7 @@ img:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 250px; /* Pevná výška zajistí, že div nezmění velikost */
+    height: 250px;
     width: 300px;
     animation: fadeIn 1.5s forwards;
     animation-delay: 0.5s;
@@ -622,8 +660,6 @@ img:hover {
         font-weight: 500;
     }
 
-
-
     .main #title {
         font-size: 20px;
     }
@@ -632,8 +668,9 @@ img:hover {
 
     }
     .header-main {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
     }
     .grid1, .grid2 {
         width: 100%;
@@ -649,16 +686,31 @@ img:hover {
     .footer-grid {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        align-items: center;
+    }
+    .contact-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-grid-item1,
+    .footer-grid-item2 {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
     }
 
+    .contact-box{
+        margin: 20px;
+    }
 
-
-    .footer-grid-item,
-    .footer-grid-item1,
-    .footer-grid-item1j {
-        min-width: 100%;
+    .company-heading {
+        margin-left: 0;
         text-align: center;
+        top: -5vh;
+        position: static;
     }
 
     .footer-logo {
@@ -717,14 +769,6 @@ img:hover {
         text-align: center;
     }
 
-
-    .footer-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 30px;
-    }
 
     .kar {
         padding: 10px;
@@ -836,7 +880,7 @@ img:hover {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 90%;
     background: url('img/city.jpg') no-repeat center center/cover;
     opacity: 0.156;
 }
@@ -849,6 +893,10 @@ img:hover {
     padding: 5rem;
 }
 
+.team-section a{
+    color: black;
+}
+
 .cv p{
     margin-bottom: 30px;
 }
@@ -858,7 +906,7 @@ img:hover {
     color: darkturquoise;
     text-align: center;
     margin: 0;
-    left: -5%;
+    left: -11%;
 }
 
 
@@ -956,4 +1004,10 @@ img:hover {
     padding-left: 20px;
     justify-content: center;
     text-align: center;
+}
+.kar-main2{
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+
 }
